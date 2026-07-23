@@ -1,0 +1,58 @@
+import Image from 'next/image'
+
+const gallery = [
+  {
+    src: '/images/practice-1.png',
+    alt: "Recetario '100 Paletas Rellenas y Cremosas' sobre una mesa de madera junto a fichas de recetas de fresa, coco, chocolate y maracuyá",
+  },
+  {
+    src: '/images/practice-2.png',
+    alt: "Recetario junto a fichas de cookies & cream y piña, con paletas empacadas con etiquetas 'Hecho en casa'",
+  },
+  {
+    src: '/images/practice-3.png',
+    alt: "Ficha de la receta 'Paleta Cremosa de Piña' con paletas de piña, trozos de piña fresca y moldes",
+  },
+]
+
+export function PracticeSection() {
+  return (
+    <section className="bg-cream-card px-4 py-12">
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="font-display text-2xl font-extrabold text-brand-brown text-balance sm:text-3xl">
+          Mira cómo quedan en la práctica
+        </h2>
+
+        <div className="mt-6 overflow-hidden rounded-3xl">
+          <Image
+            src="/images/tutorial-mujer.png"
+            alt="Mujer con delantal y guantes vertiendo mezcla de fresa en moldes de paletas, junto al recetario '100 Paletas Rellenas y Cremosas', paletas empacadas con etiquetas 'Hecho en casa' y variedad de paletas ya preparadas"
+            width={800}
+            height={600}
+            className="h-auto w-full"
+          />
+        </div>
+
+        <div className="mt-4 grid grid-cols-3 gap-3">
+          {gallery.map((item) => (
+            <div key={item.src} className="overflow-hidden rounded-2xl bg-card shadow-sm">
+              <Image
+                src={item.src || '/placeholder.svg'}
+                alt={item.alt}
+                width={300}
+                height={300}
+                className="h-auto w-full"
+              />
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-6 text-base leading-relaxed text-foreground/80 text-pretty">
+          Cada receta reúne los ingredientes y cantidades, la preparación paso a paso, los consejos
+          de textura y las ideas de presentación para que sepas exactamente cómo va a quedar tu
+          paleta en casa.
+        </p>
+      </div>
+    </section>
+  )
+}
