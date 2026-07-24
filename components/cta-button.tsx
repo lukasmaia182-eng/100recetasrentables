@@ -7,12 +7,13 @@ interface CtaButtonProps {
   label: string
   sublabel?: string
   className?: string
+  href?: string
 }
 
-export function CtaButton({ label, sublabel, className }: CtaButtonProps) {
+export function CtaButton({ label, sublabel, className, href = CHECKOUT_URL }: CtaButtonProps) {
   return (
     <a
-      href={CHECKOUT_URL}
+      href={href}
       className={cn(
         'botao-compra flex w-full max-w-md flex-col items-center rounded-2xl bg-brand-green px-6 py-4 text-center font-display text-white shadow-lg shadow-brand-green/30 transition-all hover:-translate-y-0.5 hover:bg-brand-green-dark hover:shadow-xl active:translate-y-0',
         className,
