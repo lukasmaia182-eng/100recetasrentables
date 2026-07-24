@@ -8,11 +8,6 @@ import { Guarantee } from '@/components/guarantee'
 import { Faq } from '@/components/faq'
 import { FooterCta } from '@/components/footer-cta'
 
-<!-- Pixel X App - START -->
-<script type='text/javascript'>
-!function(){var e=window.location.href,t=document.title,n=Date.now(),o=document.createElement('script');o.src='https://pxa.ingresosrentables.site/remote?url='+encodeURIComponent(e)+'&title='+encodeURIComponent(t)+'&time='+n,o.async=!0,document.head.appendChild(o)}()
-</script>
-<!-- Pixel X App - END -->
 
 export function SalesPage({ price }: { price: string }) {
   return (
