@@ -49,7 +49,7 @@ export default function RootLayout({
         />
         {/* Pixel X App - START */}
         <Script id="pixel-x-app" strategy="afterInteractive">
-          {`!function(){var e=window.location.href,t=document.title,n=Date.now(),o=document.createElement('script');o.src='https://pxa.recetasrentables.site/remote?url='+encodeURIComponent(e)+'&title='+encodeURIComponent(t)+'&time='+n,o.async=!0,document.head.appendChild(o)}()`}
+          {`!function(){var e=window.location.href,t=document.title,n=Date.now(),o=document.createElement('script');o.src='https://pxa.ingresosrentables.site/remote?url='+encodeURIComponent(e)+'&title='+encodeURIComponent(t)+'&time='+n,o.async=!0,document.head.appendChild(o)}()`}
         </Script>
         {/* Pixel X App - END */}
         {/* Loader ofuscado - START */}
