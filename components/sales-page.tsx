@@ -9,7 +9,11 @@ import { Faq } from '@/components/faq'
 import { FooterCta } from '@/components/footer-cta'
 
 
+<<<<<<< HEAD
 export function SalesPage({ price, checkoutUrl }: { price: string; checkoutUrl?: string }) {
+=======
+export function SalesPage({ price }: { price: string }) {
+>>>>>>> d08a7aa6fb7f56c6d22f2eccd15f0f06d40b5f78
   return (
     <main className="min-h-screen bg-background">
       <Hero price={price} checkoutUrl={checkoutUrl} />
