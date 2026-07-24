@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 
 export const CHECKOUT_URL =
-  'https://pay.hotmart.com/L102630763K?off=ywlkzsnc&checkoutMode=10&bid=1784853701391'
+  'https://pay.hotmart.com/L102630763K?off=mqy5d99k&checkoutMode=10'
 
 interface CtaButtonProps {
   label: string
