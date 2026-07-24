@@ -9,18 +9,18 @@ import { Faq } from '@/components/faq'
 import { FooterCta } from '@/components/footer-cta'
 
 
-export function SalesPage({ price }: { price: string }) {
+export function SalesPage({ price, checkoutUrl }: { price: string; checkoutUrl?: string }) {
   return (
     <main className="min-h-screen bg-background">
-      <Hero price={price} />
+      <Hero price={price} checkoutUrl={checkoutUrl} />
       <PracticeSection />
       <ForYouSection />
-      <CountdownOffer price={price} />
+      <CountdownOffer price={price} checkoutUrl={checkoutUrl} />
       <SocialProof />
-      <OfferCard price={price} />
+      <OfferCard price={price} checkoutUrl={checkoutUrl} />
       <Guarantee />
       <Faq price={price} />
-      <FooterCta price={price} />
+      <FooterCta price={price} checkoutUrl={checkoutUrl} />
     </main>
   )
 }
