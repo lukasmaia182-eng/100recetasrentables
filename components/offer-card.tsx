@@ -24,7 +24,7 @@ const bonuses = [
   'Bono: 30 Combos Rentables de Paletas',
 ]
 
-export function OfferCard({ price }: { price: string }) {
+export function OfferCard({ price, checkoutUrl }: { price: string; checkoutUrl?: string }) {
   return (
     <section className="px-4 py-12">
       <div className="mx-auto max-w-xl overflow-hidden rounded-3xl bg-card shadow-xl">
@@ -90,7 +90,11 @@ export function OfferCard({ price }: { price: string }) {
           </div>
 
           <div className="mt-5 flex justify-center">
-            <CtaButton label="SÍ, QUIERO LAS 100 RECETAS" sublabel="Compra 100% segura" />
+            <CtaButton
+              label="SÍ, QUIERO LAS 100 RECETAS"
+              sublabel="Compra 100% segura"
+              checkoutUrl={checkoutUrl}
+            />
           </div>
         </div>
       </div>

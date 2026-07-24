@@ -5,7 +5,7 @@ import { CtaButton } from './cta-button'
 
 const TOTAL_SECONDS = 15 * 60
 
-export function CountdownOffer({ price }: { price: string }) {
+export function CountdownOffer({ price, checkoutUrl }: { price: string; checkoutUrl?: string }) {
   const [remaining, setRemaining] = useState(TOTAL_SECONDS)
 
   useEffect(() => {
@@ -40,6 +40,7 @@ export function CountdownOffer({ price }: { price: string }) {
           <CtaButton
             label="QUIERO MIS 100 RECETAS"
             sublabel={`Solo hoy por ${price} en lugar de $19,90`}
+            checkoutUrl={checkoutUrl}
           />
         </div>
       </div>

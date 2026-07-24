@@ -10,7 +10,7 @@ const bullets = [
   'Acceso digital inmediato',
 ]
 
-export function Hero({ price }: { price: string }) {
+export function Hero({ price, checkoutUrl }: { price: string; checkoutUrl?: string }) {
   return (
     <section className="px-4 pt-10 pb-6 sm:pt-14">
       <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
@@ -45,6 +45,7 @@ export function Hero({ price }: { price: string }) {
           <CtaButton
             label="QUIERO LAS 100 RECETAS"
             sublabel="Pago único · Sin mensualidades · Acceso inmediato"
+            checkoutUrl={checkoutUrl}
           />
           <p className="mt-3 text-xs font-semibold text-foreground/60">
             Compra 100% segura · 7 días de garantía · Descarga al instante
